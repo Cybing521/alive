@@ -2,11 +2,12 @@
 
 > “在内卷中找到‘活着’的低门槛意义”
 
-![Project Banner](材料/31e1612b5c218f8b45775154ef3ead10.jpg)
+<p align="center">
+  <img src="材料/31e1612b5c218f8b45775154ef3ead10.jpg" width="45%" alt="Project Banner" />
+  <img src="材料/5b09cfa180c547a6d4dcf068af3c8fa9.png" width="45%" alt="Context Diagram" />
+</p>
 
 **Alive** 是一款专为处于“情绪亚健康”和“隐性焦虑”的大学生及研究人员设计的心理支持软件。不同于传统的医疗问诊类 App，Alive 侧重于情绪共鸣、社交陪伴和轻量化的心理救赎。它旨在打造一个“当代大学生精神自救互助社群”。
-
-![Context Diagram](材料/5b09cfa180c547a6d4dcf068af3c8fa9.png)
 
 ## ✨ 核心功能 (Core Features)
 
