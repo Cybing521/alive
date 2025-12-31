@@ -1,0 +1,182 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% Page geometry
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% Title formatting
+\title{\textbf{Project "Alive" Portfolio}}
+\author{
+    \textbf{组长：} 25121360 陈艺彬 \\
+    \textbf{组员：} 25121366 索昊 \\
+    \hspace{1.3cm} 25126579 卢晓晴 \\
+    \hspace{1.3cm} 25126566 李艺攀 \\
+    \hspace{1.3cm} 25121365 钱波 \\
+    \hspace{1.3cm} 25126625 张至柔
+}
+\date{2025年12月30日}
+
+% Custom environment for daily logs
+\newenvironment{dailylog}[2]{
+    \noindent\rule{\textwidth}{1pt}\\[0.5em]
+    \noindent\textbf{#1} \hfill \textbf{任务：} #2 \\[0.5em]
+}{
+    \vspace{1em}
+}
+
+\begin{document}
+
+\maketitle
+
+\section*{项目开发日志 (Daily Log)}
+
+\begin{dailylog}{2025年12月23日}{1) 组建小组，2) 确定项目}
+    \textbf{成果 (Achievements):}
+    \begin{enumerate}
+        \item \textbf{小组已组建。成员包括：}
+        \begin{itemize}
+            \item 陈艺彬 - 25121360 (组长)
+            \item 索昊 - 25121366
+            \item 卢晓晴 - 25126579
+            \item 李艺攀 - 25126566
+            \item 钱波 - 25121365
+            \item 张至柔 - 25126625
+        \end{itemize}
+        \item \textbf{项目标题：} Alive
+        \item \textbf{项目简述：} “Alive” 是一款专为处于“情绪亚健康”和“隐性焦虑”的大学生及研究人员设计的心理支持软件。不同于传统的医疗问诊类App，Alive 侧重于情绪共鸣、社交陪伴和轻量化的心理救赎。它旨在打造一个“当代大学生精神自救互助社群”，通过“每日生存确认”和“遗忘清单树洞”等功能，帮助用户在内卷中找到“活着”的低门槛意义。\textbf{技术上，拟采用“Flutter”进行跨平台开发，并使用“SQLite”进行本地数据加密存储以实现“本地优先（Local-First）”架构，确保极致的隐私安全。}
+    \end{enumerate}
+    \textbf{任务与成果之间的差距 (Gaps):}
+    \begin{itemize}
+        \item 核心概念已确定，但关于“树洞”功能的具体技术架构（离线版与在线版数据库的衔接）仍需小组进一步讨论。
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{2025年12月24日}{识别利益相关者 (Stakeholders)}
+    \textbf{成果 (Achievements):}
+    \begin{enumerate}
+        \item \textbf{利益相关者 1：大学生/研究生（核心用户）。}
+        \begin{itemize}
+            \item 描述：面临激烈的学术竞争、就业压力以及社会期望，处于“内卷”中心的人群。他们往往不认为自己有精神疾病，但感到持续疲惫。他们需要一个去专业化、能说真话的宣泄空间。
+        \end{itemize}
+        \item \textbf{利益相关者 2：产品开发团队（我们）。}
+        \begin{itemize}
+            \item 描述：负责产品的设计与落地。关键职责包括设计“多巴胺”风格的UI，确保隐私安全，并把控软件“反内卷、反焦虑”的温情基调。
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap (差距):}
+    \begin{itemize}
+        \item 需要进行初步的用户访谈，以验证“把活着当成一种打卡”这一概念是否真能引起目标群体的共鸣。
+        \item \textbf{利益冲突（Conflict of Interest）：} 我们在“监管方要求的实名追溯”与“用户渴望的完全匿名”之间发现核心冲突。这不仅是技术问题，更是产品伦理问题，需要进一步探讨“去标识化（De-identification）”技术的可行性。
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{2025年12月25日}{识别利益相关者 (Stakeholders)}
+    \textbf{成果 (Achievements):}
+    \begin{enumerate}
+        \item \textbf{利益相关者 3：监管机构 / 平台审核方。}
+        \begin{itemize}
+            \item 描述：负责执行网络内容法规的实体。由于心理健康属于敏感话题，软件必须内置完善的“脱敏处理”和心理预警机制，以避免触碰监管红线。
+        \end{itemize}
+        \item \textbf{利益相关者 4：高校管理层 / 学生心理咨询中心。}
+        \begin{itemize}
+            \item 描述：潜在的推广合作对象，也可能是阻力方。他们关注学生的安全，可能会要求软件具备针对高危用户的干预协议。
+        \end{itemize}
+        \item \textbf{利益相关者 5：内容创作者（营销引流）。}
+        \begin{itemize}
+            \item 描述：小红书/微博上的博主，负责制作具有冲击力的“共鸣文学”海报，为App引流。
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap (差距):}
+    \begin{itemize}
+        \item 目前尚未联系到专业的心理咨询师或志愿者，无法验证我们的“心理预警机制”在专业角度是否足够完善。
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{2025年12月26日}{识别需求 (Requirements)}
+    \textbf{成果 (Achievements):}
+    \begin{enumerate}
+        \item \textbf{需求类型 1：功能性需求（核心玩法）。名称：每日生存确认。来源：核心用户。}
+        \begin{itemize}
+            \item \textit{细节：} 一个低门槛的“打卡”系统。用户只需确认“今天我活着”，作为当日的指标。旨在缓解学业和就业焦虑，提供当日的“记忆点存储”。
+        \end{itemize}
+        \item \textbf{需求类型 2：功能性需求（游戏化）。名称：生命可视化/情绪植被。来源：核心用户/团队创意。}
+        \begin{itemize}
+            \item \textit{细节：} 将“生存确认”具象化。用户每确认一次“活着”，虚拟界面中的植物/宠物获得一次成长。\textbf{核心设计原则是：只提供正向反馈，长期不打卡仅会“休眠”而非“死亡”，避免制造新的焦虑。}
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap (差距):}
+    \begin{itemize}
+        \item 关于“在线模式”的算法逻辑及其内容审核成本较高，可能暂时推迟到软件的第二阶段开发。
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{2025年12月27日}{识别需求 (Requirements)}
+    \textbf{成果 (Achievements):}
+    \begin{enumerate}
+        \item \textbf{需求类型 3：非功能性需求（UI/UX）。名称：自适应情绪UI。来源：开发团队/人本设计。}
+        \begin{itemize}
+            \item \textit{细节：} 虽然主打“多巴胺配色”，但需提供\textbf{“深夜/低能量模式”}。针对深夜使用的焦虑人群，降低色彩饱和度，减少蓝光，避免视觉刺激造成失眠加重或情绪波动。
+        \end{itemize}
+        \item \textbf{需求类型 4：非功能性需求（安全/合规）。名称：匿名性与危机干预。来源：监管机构与用户。}
+        \begin{itemize}
+            \item \textit{细节：} 必须保证用户的完全匿名性以鼓励说真话；同时必须植入自动关键词检测，一旦识别到自残/自杀倾向，立即触发预警机制。
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap (差距):}
+    \begin{itemize}
+        \item 如何在“保证完全匿名（不收集实名信息）”和“遇到生命危险时能有效干预”之间取得平衡，在技术实现上存在难点。
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{2025年12月28日}{完善需求 (Refine Requirements)}
+    \textbf{成果 (Achievements):}
+    \begin{enumerate}
+        \item \textbf{完善需求 1：每日生存确认。描述：它可衡量吗？是的。}
+        \begin{itemize}
+            \item \textit{衡量标准：} 系统记录用户每日点击“确认活着”的次数和时间戳。成功标准是该功能的日活跃用户数（DAU）占比。
+        \end{itemize}
+        \item \textbf{完善需求 2：危机预警机制。描述：它可衡量吗？是的。}
+        \begin{itemize}
+            \item \textit{衡量标准：} 系统需在用户输入内容后的 1秒内 识别出预设的“高危关键词”，并确保 100\% 弹出包含本地求助热线的弹窗。
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap (差距):}
+    \begin{itemize}
+        \item 需要定义第一版具体的“高危关键词库”，以确保既不误报（把吐槽当自杀），也不漏报。
+        \item \textbf{社区氛围熵增风险（Risk of Community Entropy）：} 纯粹的宣泄会导致社区氛围迅速恶化（变为情绪垃圾桶）。我们正在考虑引入“正向反馈算法”，即只有在用户给予他人鼓励后，才能解锁更多树洞内容，以此维持社区的温暖度。
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{2025年12月29日}{成功指标 (Success Metrics)}
+    \textbf{成果 (Achievements):}
+    \textbf{成功指标描述：}
+    \begin{enumerate}
+        \item \textbf{用户留存率 (Retention Rate)：} 作为一个主打“陪伴”的App，目标是7日留存率达到 30\% 以上。
+        \item \textbf{情绪缓解评分 (Emotional Relief Score)：} (定性指标) 通过应用内简短调研：“打卡后你是否感觉焦虑减轻？”，目标是获得 70\% 的肯定回答。
+        \item \textbf{安全合规性 (Safety Compliance)：} 高危预警零漏报；用户真实身份数据零泄露。
+        \item \textbf{误报率 (False Positive Rate)：} 危机预警系统的误报率需控制在 5\% 以下，以免频繁骚扰用户导致卸载。
+        \item \textbf{社区内容量：} 树洞数据库中积累的有效“愿望清单”数量。
+    \end{enumerate}
+\end{dailylog}
+
+\begin{dailylog}{2025年12月30日}{PPT 制作}
+    \textbf{成果 (Achievements):}
+    \begin{enumerate}
+        \item \textbf{完成了项目演示文稿 (PPT)，内容涵盖：}
+        \begin{itemize}
+            \item \textbf{痛点分析：} 学生的隐性焦虑与内卷现状。
+            \item \textbf{解决方案：} Alive App (生存打卡 + 树洞)。
+            \item \textbf{利益相关者分析：} 如何平衡学生需求与监管要求。
+            \item \textbf{原型演示：} 展示多巴胺UI配色与匿名交互流程。
+            \item \textbf{未来规划：} 第一阶段（离线工具） $\rightarrow$ 第二阶段（互助社区）。制定了下一步开发路线图（Roadmap），明确了寒假期间的 MVP（最小可行性产品）开发计划。
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap (差距):}
+    \begin{itemize}
+        \item 无。PPT已准备好接受审核。
+    \end{itemize}
+\end{dailylog}
+
+\end{document}

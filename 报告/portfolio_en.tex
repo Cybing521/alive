@@ -1,0 +1,182 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% Page geometry
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% Title formatting
+\title{\textbf{Project "Alive" Portfolio}}
+\author{
+    \textbf{Leader:} 陈艺彬 (25121360) \\
+    \textbf{Members:} 索昊 (25121366) \\
+    \hspace{1.3cm} 卢晓晴 (25126579) \\
+    \hspace{1.3cm} 李艺攀 (25126566) \\
+    \hspace{1.3cm} 钱波 (25121365) \\
+    \hspace{1.3cm} 张至柔 (25126625)
+}
+\date{December 30, 2025}
+
+% Custom environment for daily logs
+\newenvironment{dailylog}[2]{
+    \noindent\rule{\textwidth}{1pt}\\[0.5em]
+    \noindent\textbf{#1} \hfill \textbf{Task:} #2 \\[0.5em]
+}{
+    \vspace{1em}
+}
+
+\begin{document}
+
+\maketitle
+
+\section*{Development Log}
+
+\begin{dailylog}{December 23, 2025}{1) Form a team, 2) Identify a project}
+    \textbf{Achievements:}
+    \begin{enumerate}
+        \item \textbf{Team formed. Members include:}
+        \begin{itemize}
+            \item 陈艺彬 - 25121360 (Group Leader)
+            \item 索昊 - 25121366
+            \item 卢晓晴 - 25126579
+            \item 李艺攀 - 25126566
+            \item 钱波 - 25121365
+            \item 张至柔 - 25126625
+        \end{itemize}
+        \item \textbf{Project Title:} Alive
+        \item \textbf{Project Description:} "Alive" is a psychological support software designed for university students and researchers experiencing "sub-health emotions" and "hidden anxiety." Unlike traditional medical consultation apps, "Alive" focuses on emotional resonance, social companionship, and lightweight psychological redemption. It aims to build a "contemporary college student spiritual self-help mutual aid community," helping users find low-threshold meanings of "living" amidst "involution" through features like "Daily Survival Confirmation" and the "Forgetfulness Tree Hole." \textbf{Technically, we plan to use Flutter for cross-platform development and SQLite for encrypted local data storage to implement a "Local-First" architecture, ensuring ultimate privacy security.}
+    \end{enumerate}
+    \textbf{Gaps between Task and Achievements:}
+    \begin{itemize}
+        \item The core concept is defined, but the specific technical architecture for the "Tree Hole" feature (the connection between the offline version and the online database) requires further group discussion.
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{December 24, 2025}{Identify Stakeholders}
+    \textbf{Achievements:}
+    \begin{enumerate}
+        \item \textbf{Stakeholder 1: University/Graduate Students (Core Users).}
+        \begin{itemize}
+            \item Description: Populations facing intense academic competition, employment pressure, and social expectations, sitting at the center of "involution." They often do not consider themselves mentally ill but feel persistently exhausted. They need a de-professionalized space to speak the truth.
+        \end{itemize}
+        \item \textbf{Stakeholder 2: Product Development Team (Us).}
+        \begin{itemize}
+            \item Description: Responsible for product design and implementation. Key responsibilities include designing a "Dopamine" style UI, ensuring privacy security, and controlling the warm, "anti-involution, anti-anxiety" tone of the software.
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap:}
+    \begin{itemize}
+        \item We need to conduct preliminary user interviews to verify if the concept of "treating living as a check-in" genuinely resonates with the target group.
+        \item \textbf{Conflict of Interest:} We identified a core conflict between "regulatory requirements for real-name traceability" and "user desire for complete anonymity." This is not just a technical issue but a product ethics one, requiring further exploration of \textbf{"De-identification"} technologies.
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{December 25, 2025}{Identify Stakeholders}
+    \textbf{Achievements:}
+    \begin{enumerate}
+        \item \textbf{Stakeholder 3: Regulatory Bodies / Platform Auditors.}
+        \begin{itemize}
+            \item Description: Entities responsible for enforcing internet content regulations. Since mental health is a sensitive topic, the software must have built-in "desensitization processing" and psychological warning mechanisms to avoid crossing regulatory red lines.
+        \end{itemize}
+        \item \textbf{Stakeholder 4: University Administration / Student Counseling Centers.}
+        \begin{itemize}
+            \item Description: Potential partners for promotion, but also potential sources of resistance. They prioritize student safety and might require the software to have intervention protocols for high-risk users.
+        \end{itemize}
+        \item \textbf{Stakeholder 5: Content Creators (Marketing/Traffic).}
+        \begin{itemize}
+            \item Description: Bloggers on Xiaohongshu/Weibo, responsible for creating impactful "resonance literature" posters to drive traffic to the App.
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap:}
+    \begin{itemize}
+        \item We have not yet contacted professional psychological counselors or volunteers, so we cannot verify if our "psychological warning mechanism" is sufficiently robust from a professional perspective.
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{December 26, 2025}{Identify Requirements}
+    \textbf{Achievements:}
+    \begin{enumerate}
+        \item \textbf{Requirement Type 1: Functional (Core Gameplay). Name: Daily Survival Confirmation. Source: Core Users.}
+        \begin{itemize}
+            \item \textit{Details:} A low-threshold "check-in" system. Users simply confirm "I am alive today" as the day's metric. Aims to alleviate academic and employment anxiety, providing a "memory point storage" for the day.
+        \end{itemize}
+        \item \textbf{Requirement Type 2: Functional (Gamification). Name: Life Visualization / Emotional Vegetation. Source: Core Users / Team Idea.}
+        \begin{itemize}
+            \item \textit{Details:} Visualizing "Survival Confirmation." Every time a user confirms "I am alive," a virtual plant/pet grows. \textbf{Core Design Principle: Only provide positive feedback; long-term absence only leads to "dormancy" rather than "death" to avoid creating new anxiety.}
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap:}
+    \begin{itemize}
+        \item The algorithm logic for "Online Mode" and its content moderation costs are high, so it may be postponed to the second phase of development.
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{December 27, 2025}{Identify Requirements}
+    \textbf{Achievements:}
+    \begin{enumerate}
+        \item \textbf{Requirement Type 3: Non-Functional (UI/UX). Name: Adaptive Emotional UI. Source: Dev Team / Human-Centered Design.}
+        \begin{itemize}
+            \item \textit{Details:} While focusing on \textbf{"Dopamine-inducing Color Psychology,"} we must provide a \textbf{"Night / Low Energy Mode."} For anxious users late at night, we reduce color saturation and blue light to avoid visual stimulation aggravating insomnia or mood swings.
+        \end{itemize}
+        \item \textbf{Requirement Type 4: Non-Functional (Safety/Compliance). Name: Anonymity and Crisis Intervention. Source: Regulators \& Users.}
+        \begin{itemize}
+            \item \textit{Details:} Must guarantee complete user anonymity to encourage truth-telling; simultaneously must embed automatic keyword detection to immediately trigger warning mechanisms upon identifying self-harm/suicide tendencies.
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap:}
+    \begin{itemize}
+        \item Balancing "guaranteeing complete anonymity (no real-name collection)" and "effective intervention in life-threatening situations" presents a technical difficulty that needs to be resolved.
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{December 28, 2025}{Refine Requirements}
+    \textbf{Achievements:}
+    \begin{enumerate}
+        \item \textbf{Refine Requirement 1: Daily Survival Confirmation. Description: Is it measurable? Yes.}
+        \begin{itemize}
+            \item \textit{Metric:} The system records the count and timestamps of users clicking "Confirm Alive." The success standard is the percentage of Daily Active Users (DAU) using this feature.
+        \end{itemize}
+        \item \textbf{Refine Requirement 2: Crisis Warning Mechanism. Description: Is it measurable? Yes.}
+        \begin{itemize}
+            \item \textit{Metric:} The system must identify preset "high-risk keywords" within 1 second of user input, and ensure 100\% pop-up of a window containing local help hotlines.
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap:}
+    \begin{itemize}
+        \item We need to define the specific "high-risk keyword library" for Version 1 to ensure no false positives (mistaking venting for suicide risk) and no false negatives.
+        \item \textbf{Risk of Community Entropy:} Pure venting can cause the community atmosphere to deteriorate rapidly (becoming an \textbf{"echo chamber of negativity"}). We are considering introducing a \textbf{"Positive Feedback Algorithm,"} where users must offer encouragement to others to unlock more Tree Hole content, thereby maintaining community warmth.
+    \end{itemize}
+\end{dailylog}
+
+\begin{dailylog}{December 29, 2025}{Success Metrics}
+    \textbf{Achievements:}
+    \textbf{Description of Success Metrics:}
+    \begin{enumerate}
+        \item \textbf{User Retention Rate:} As an App focused on "companionship," the goal is a 7-day retention rate of > 30\%.
+        \item \textbf{Emotional Relief Score (Qualitative):} Via an in-app brief survey: "Did you feel less anxious after checking in?" Target is to obtain > 70\% affirmative responses.
+        \item \textbf{Safety Compliance:} Zero missed high-risk warnings; Zero leakages of real user identity data.
+        \item \textbf{False Positive Rate:} The crisis warning system's false positive rate must be kept under 5\% to avoid annoying users and causing uninstalls.
+        \item \textbf{Community Content Volume:} The number of valid "wish list" items accumulated in the Tree Hole database.
+    \end{enumerate}
+\end{dailylog}
+
+\begin{dailylog}{December 30, 2025}{PPT Creation}
+    \textbf{Achievements:}
+    \begin{enumerate}
+        \item \textbf{Completed Project Presentation (PPT), covering:}
+        \begin{itemize}
+            \item \textbf{Pain Point Analysis:} Students' hidden anxiety and involution status.
+            \item \textbf{Solution:} Alive App (Survival Check-in + Tree Hole).
+            \item \textbf{Stakeholder Analysis:} How to balance student needs with regulatory requirements.
+            \item \textbf{Prototype Demo:} Showcasing Dopamine UI and anonymous interaction flow.
+            \item \textbf{Future Roadmap:} Phase 1 (Offline Tool) $\rightarrow$ Phase 2 (Mutual Aid Community). Defined the \textbf{Development Roadmap}, clarifying the MVP (Minimum Viable Product) plan for the winter break.
+        \end{itemize}
+    \end{enumerate}
+    \textbf{Gap:}
+    \begin{itemize}
+        \item None. PPT is ready for review.
+    \end{itemize}
+\end{dailylog}
+
+\end{document}
